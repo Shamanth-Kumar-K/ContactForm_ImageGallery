@@ -20,5 +20,3 @@
 1. Clone the repository:
 ```bash
 git clone https://github.com/Shamanth-Kumar-K/ContactForm_ImageGallery.git
-)
-
