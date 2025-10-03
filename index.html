@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>My Web Dashboard</h1>
+  </header>
+  
+  <nav>
+    <a href="#contact">Contact</a>
+    <a href="#todo">To-Do List</a>
+    <a href="#gallery">Image Gallery</a>
+  </nav>
+  
+  <main>
+    <section class="content" id="contact">
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    
+    <aside class="sidebar" id="todo">
+      <h2>My To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter new task">
+      <button onclick="addTask()">Add Task</button>
+      <ul id="taskList"></ul>
+    </aside>
+  </main>
+  
+  <section class="gallery" id="gallery">
+    <h2>Image Gallery</h2>
+    <input type="text" id="imgUrl" placeholder="Enter image URL">
+    <button onclick="addImage()">Add Image</button>
+    <div id="galleryContainer"></div>
+  </section>
+ 
+  <footer>
+    <p>© 2025 My Web Gallery</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
